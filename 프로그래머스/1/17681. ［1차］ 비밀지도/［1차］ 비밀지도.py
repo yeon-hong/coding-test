@@ -3,9 +3,8 @@ def solution(n, arr1, arr2):
     
     for i, j in zip(arr1, arr2):
         a = format(i | j, f'0{n}b')
-        b = ""
-        for k in a:
-            b += "#" if k == "1" else " "
-        answer.append(b)
+        a = a.replace("1","#")
+        a = a.replace("0"," ")
+        answer.append(a)
 
     return answer
