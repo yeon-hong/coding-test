@@ -15,7 +15,7 @@ def can_pronounce(word):
                 word = word[len(sound):]
                 prev = sound
                 matched = True
-                break
+                
         if not matched:
             return False
     return True
