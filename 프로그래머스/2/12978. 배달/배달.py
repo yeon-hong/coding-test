@@ -11,7 +11,7 @@ def solution(N, road, K):
     # 2. 다익스트라 초기화
     distance = [float('inf')] * (N + 1)
     distance[1] = 0  # 1번 마을에서 출발
-    heap = [(0, 1)]  # (소요시간, 현재마을)3
+    heap = [(0, 1)]  # (소요시간, 현재마을)
     0
 
     # 3. 다익스트라 실행
