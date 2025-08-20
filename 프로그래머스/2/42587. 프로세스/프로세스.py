@@ -2,7 +2,7 @@ from collections import deque
 
 def solution(priorities, location):
     dq = deque([(p, idx) for idx, p in enumerate(priorities)])
-    count = 0
+    count = 1
 
     while dq:
         p, idx = dq.popleft()
@@ -11,8 +11,7 @@ def solution(priorities, location):
             dq.append((p, idx))
         else:
 
-            count += 1
             if idx == location:  
                 break
-                
+            count += 1   
     return count
